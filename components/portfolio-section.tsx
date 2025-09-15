@@ -15,6 +15,7 @@ export default function PortfolioSection() {
       color: "from-purple-100 to-pink-50",
       accent: "bg-purple-400",
       emoji: "✨",
+      image: "fashion-designer-portrait.png",
     },
     {
       id: 2,
@@ -24,6 +25,7 @@ export default function PortfolioSection() {
       color: "from-slate-100 to-gray-50",
       accent: "bg-slate-500",
       emoji: "🏙️",
+      image: "fashion-designer-portrait.png",
     },
     {
       id: 3,
@@ -33,6 +35,7 @@ export default function PortfolioSection() {
       color: "from-amber-100 to-orange-50",
       accent: "bg-amber-500",
       emoji: "🌸",
+      image: "fashion-design-sketch.png",
     },
     {
       id: 4,
@@ -42,6 +45,7 @@ export default function PortfolioSection() {
       color: "from-emerald-100 to-teal-50",
       accent: "bg-emerald-500",
       emoji: "🎨",
+      image: "fashion-designer-portrait.png",
     },
     {
       id: 5,
@@ -51,6 +55,7 @@ export default function PortfolioSection() {
       color: "from-green-100 to-lime-50",
       accent: "bg-green-500",
       emoji: "🌿",
+      image: "fashion-designer-portrait.png",
     },
     {
       id: 6,
@@ -60,6 +65,7 @@ export default function PortfolioSection() {
       color: "from-rose-100 to-red-50",
       accent: "bg-rose-500",
       emoji: "🚀",
+      image: "fashion-designer-portrait.png",
     },
   ]
 
@@ -93,7 +99,7 @@ export default function PortfolioSection() {
 
                   <div className="relative sketch-border rounded-2xl overflow-hidden bg-white shadow-lg transform transition-all duration-500 hover:shadow-2xl">
                     <img
-                      src={`/fashion-design-sketch.png?height=600&width=450&query=fashion design sketch ${sketch.title.toLowerCase()}, hand-drawn fashion illustration, elegant dress design`}
+                      src={`${sketch.image}?height=600&width=450&query=fashion design sketch ${sketch.title.toLowerCase()}, hand-drawn fashion illustration, elegant dress design`}
                       alt={sketch.title}
                       className={`w-full h-auto transition-all duration-700 ${hoveredSketch === sketch.id ? "scale-110 brightness-110" : "scale-100"}`}
                     />
