@@ -8,64 +8,113 @@ export default function PortfolioSection() {
   const sketches = [
     {
       id: 1,
-      title: "Evening Elegance",
+      title: "Blue Elegance",
       description:
-        "A flowing evening gown inspired by Art Deco architecture, featuring geometric beadwork and silk chiffon layers.",
-      materials: "Silk chiffon, glass beads, satin lining",
-      color: "from-purple-100 to-pink-50",
-      accent: "bg-purple-400",
+        "A stunning blue evening gown with intricate floral embellishments at the hem, showcasing delicate hand-drawn details and flowing silhouette.",
+      materials: "Silk chiffon, hand-embroidered florals, satin lining",
+      color: "from-blue-100 to-indigo-50",
+      accent: "bg-blue-400",
       emoji: "✨",
-      image: "fashion-designer-portrait.png",
+      image: "/IMG_6252.jpg",
     },
     {
       id: 2,
-      title: "Urban Minimalist",
-      description: "Contemporary streetwear collection focusing on clean lines and sustainable fabrics.",
-      materials: "Organic cotton, recycled polyester",
+      title: "Sophisticated Black Collection",
+      description:
+        "Three elegant black outfits featuring sophisticated silhouettes with Persian heritage influences and modern styling.",
+      materials: "Premium black fabrics, structured tailoring",
       color: "from-slate-100 to-gray-50",
       accent: "bg-slate-500",
-      emoji: "🏙️",
-      image: "fashion-designer-portrait.png",
+      emoji: "🖤",
+      image: "/IMG_0032.JPG",
     },
     {
       id: 3,
-      title: "Cultural Fusion",
-      description: "Traditional Persian motifs reimagined in modern silhouettes, celebrating heritage through fashion.",
-      materials: "Embroidered silk, metallic threads",
-      color: "from-amber-100 to-orange-50",
-      accent: "bg-amber-500",
-      emoji: "🌸",
-      image: "fashion-design-sketch.png",
+      title: "Rose Garden Dreams",
+      description:
+        "A romantic pink gown with geometric patterns and flowing design, combining structured elements with feminine grace.",
+      materials: "Rose-toned silk, geometric embellishments",
+      color: "from-pink-100 to-rose-50",
+      accent: "bg-pink-400",
+      emoji: "🌹",
+      image: "/IMG_6253.jpg",
     },
     {
       id: 4,
-      title: "Textural Play",
-      description: "Experimental piece exploring the contrast between rough and smooth textures in wearable art.",
-      materials: "Raw linen, silk organza, leather details",
-      color: "from-emerald-100 to-teal-50",
-      accent: "bg-emerald-500",
-      emoji: "🎨",
-      image: "fashion-designer-portrait.png",
+      title: "Urban Chic",
+      description:
+        "Contemporary streetwear design featuring a crop top and shorts ensemble with clean lines and modern athletic influences.",
+      materials: "Cotton blend, structured details, comfortable fit",
+      color: "from-gray-100 to-slate-50",
+      accent: "bg-gray-500",
+      emoji: "👟",
+      image: "/IMG_0015.JPG",
     },
     {
       id: 5,
-      title: "Botanical Dreams",
-      description: "Nature-inspired collection featuring hand-painted floral motifs and organic shapes.",
-      materials: "Natural dyes, cotton canvas, silk",
-      color: "from-green-100 to-lime-50",
-      accent: "bg-green-500",
-      emoji: "🌿",
-      image: "fashion-designer-portrait.png",
+      title: "Dramatic Elegance",
+      description:
+        "A striking black and white ensemble with a dramatic wide-brimmed hat, featuring geometric white details and sophisticated styling.",
+      materials: "Black and white contrast fabrics, structured hat",
+      color: "from-stone-100 to-zinc-50",
+      accent: "bg-stone-500",
+      emoji: "🎩",
+      image: "/IMG_0013.JPG",
     },
     {
       id: 6,
-      title: "Avant-Garde Vision",
-      description: "Conceptual design pushing boundaries of traditional fashion through sculptural elements.",
-      materials: "Structured interfacing, metallic mesh",
-      color: "from-rose-100 to-red-50",
-      accent: "bg-rose-500",
-      emoji: "🚀",
-      image: "fashion-designer-portrait.png",
+      title: "Emerald Flow",
+      description:
+        "A flowing evening gown in green and yellow tones, showcasing organic movement and elegant draping with mixed color techniques.",
+      materials: "Flowing fabrics, mixed green and yellow tones",
+      color: "from-green-100 to-yellow-50",
+      accent: "bg-green-500",
+      emoji: "🌿",
+      image: "/IMG_6247.jpg",
+    },
+    {
+      id: 7,
+      title: "Persian Heritage",
+      description:
+        "A red Asian-inspired dress celebrating traditional elements with modern interpretation, featuring cultural motifs and elegant silhouette.",
+      materials: "Red silk, traditional embellishments, cultural details",
+      color: "from-red-100 to-orange-50",
+      accent: "bg-red-500",
+      emoji: "🏮",
+      image: "/IMG_0031.JPG",
+    },
+    {
+      id: 8,
+      title: "Power Red",
+      description:
+        "A modern red blazer dress design showcasing contemporary professional wear with chic styling and confident silhouette.",
+      materials: "Structured red fabric, tailored fit, modern cut",
+      color: "from-red-100 to-pink-50",
+      accent: "bg-red-400",
+      emoji: "💼",
+      image: "/IMG_0034.JPG",
+    },
+    {
+      id: 9,
+      title: "Luxe Outerwear",
+      description:
+        "A sophisticated brown leather coat design featuring layered styling and premium materials for elegant outerwear.",
+      materials: "Brown leather, layered construction, premium finish",
+      color: "from-amber-100 to-orange-50",
+      accent: "bg-amber-500",
+      emoji: "🧥",
+      image: "/IMG_0016.JPG",
+    },
+    {
+      id: 10,
+      title: "Pink Ruffles",
+      description:
+        "A playful yet elegant pink dress with multiple tiers of ruffles, showcasing dramatic volume and feminine charm.",
+      materials: "Pink chiffon, tiered ruffles, structured bodice",
+      color: "from-pink-100 to-fuchsia-50",
+      accent: "bg-pink-500",
+      emoji: "🎀",
+      image: "/IMG_0012.JPG",
     },
   ]
 
@@ -99,7 +148,7 @@ export default function PortfolioSection() {
 
                   <div className="relative sketch-border rounded-2xl overflow-hidden bg-white shadow-lg transform transition-all duration-500 hover:shadow-2xl">
                     <img
-                      src={`${sketch.image}?height=600&width=450&query=fashion design sketch ${sketch.title.toLowerCase()}, hand-drawn fashion illustration, elegant dress design`}
+                      src={sketch.image || "/placeholder.svg"}
                       alt={sketch.title}
                       className={`w-full h-auto transition-all duration-700 ${hoveredSketch === sketch.id ? "scale-110 brightness-110" : "scale-100"}`}
                     />
