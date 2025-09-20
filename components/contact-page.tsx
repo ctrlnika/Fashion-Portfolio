@@ -19,13 +19,13 @@ export default function ContactPage() {
               <p className="flex items-center justify-center space-x-3">
                 <span className="text-sm uppercase tracking-wide">Email</span>
                 <span className="w-4 h-px bg-stone-400"></span>
-                <span>sogol.samivand@email.com</span>
+                <span>sogolsamivand@gmail.com</span>
               </p>
 
               <p className="flex items-center justify-center space-x-3">
                 <span className="text-sm uppercase tracking-wide">Instagram</span>
                 <span className="w-4 h-px bg-stone-400"></span>
-                <span>@sogol.designs</span>
+                <span>@sogoli.designs</span>
               </p>
 
               <p className="flex items-center justify-center space-x-3">
